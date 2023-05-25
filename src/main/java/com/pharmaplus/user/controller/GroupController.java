@@ -4,7 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import com.pharmaplus.user.exception.NotFoundException;
-import org.springframework.transaction.annotation.Transactional;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import com.pharmaplus.user.entity.Group;
 import com.pharmaplus.user.repository.GroupRepository;
 import com.pharmaplus.user.utility.ApiResponse;
 
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/pharmaplus/group")
 public class GroupController {

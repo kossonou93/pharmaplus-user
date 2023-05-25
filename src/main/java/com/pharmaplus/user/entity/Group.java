@@ -3,7 +3,7 @@ package com.pharmaplus.user.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("Group")
+@Document("group")
 public class Group {
 
 	@Id
